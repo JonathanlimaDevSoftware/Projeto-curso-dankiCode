@@ -1,0 +1,14 @@
+@mixin flex($padding: 10px, $direction: row, $space: center, $align: center) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $padding;          // Padding dinâmico, valor padrão 10px
+  flex-direction: $direction;  // Flexível, pode ser 'row' ou 'column', valor padrão 'row'
+  justify-content: $space;    // Espaçamento entre os itens: 'center', 'space-between', etc., valor padrão 'center'
+  align-items: $align;        // Alinhamento vertical dos itens: 'center', 'flex-start', etc., valor padrão 'center'
+}
+
+
+@mixin center-auto($max-width: 900px){
+  margin: 0 auto;
+  max-width: $max-width;
+}

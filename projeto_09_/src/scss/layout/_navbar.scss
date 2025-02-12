@@ -1,0 +1,16 @@
+@use "../../scss/utils/mixins" as mixins; 
+
+.navbar{
+  @include mixins.center-auto(900px);
+  @include mixins.flex(10px 30px 10px 20px, row, space-between, center);
+
+  a{color: white}
+}
+
+.navbar__link{
+  @include mixins.flex(0, row, space-between, center);
+  gap: 20px;
+
+  
+
+}
