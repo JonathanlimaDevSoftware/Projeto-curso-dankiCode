@@ -1,0 +1,57 @@
+@use '../utils/mixins' as mixins;
+
+.call-back{
+  @include mixins.flex(0,row, space-between, center);
+  @include mixins.center-auto(910px);
+  flex-wrap: nowrap;
+  padding: 50px 0;
+  gap: 20px;
+
+  .call-back__left{
+    max-width: 470px;
+    
+    .text-call{
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      a{font-size: 0.90rem;}}
+  }
+  
+  .call-back__right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;}
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .call-back{
+    text-align: center;
+    .title-main{
+      
+      h1{
+        font-size: 1.65rem; 
+        .title--detail{font-size: 1.65rem}
+      }
+    }
+  }
+
+ .form-single{ @include mixins.flex(0,column, space-between, center); gap: 10px;}
+
+}
+
+@media screen and (max-width: 910px) {
+  .call-back{
+    @include mixins.flex(0,column, space-between, center);
+    
+    .call-back__right{
+      overflow: hidden;
+      display: flex;
+      img{
+        width: 150px;
+      }  
+    }
+
+  }
+}

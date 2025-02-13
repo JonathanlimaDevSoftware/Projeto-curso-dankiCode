@@ -1,0 +1,25 @@
+@use '../utils/variables' as variebles;
+@use '../utils/mixins' as mixins;
+
+
+.form-single{
+  margin-top: 20px;
+  .input-write{
+    border:2px solid variebles.$color-sixth;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: variebles.$color-seventh;
+    
+    &.w-sm{ max-width: 200px;}
+
+    &.input-submit{
+      @include mixins.btn-input(variebles.$color-third, variebles.$color-eighth);
+      border: none;
+      &:active{
+        transform: scale(1.1);}
+    }
+  }
+
+
+
+}

@@ -1,0 +1,15 @@
+@use '../utils/variables' as variebles;
+
+.title-main{
+
+  h1,h2{
+    font-size: 1.80rem;
+    color: variebles.$color-primary;
+    .title--detail{
+      font-size: 1.80rem;
+      font-weight: 600;
+      color: variebles.$color-primary;}
+  }
+
+
+}

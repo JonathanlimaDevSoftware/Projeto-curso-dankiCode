@@ -1,16 +1,33 @@
 @use "../../scss/utils/mixins" as mixins; 
+@use '../../scss/utils/variables' as variebles; 
+
 
 .navbar{
   @include mixins.center-auto(900px);
   @include mixins.flex(10px 30px 10px 20px, row, space-between, center);
-
   a{color: white}
+
+  .navbar__link{
+    display: none;
+    gap: 20px;}
+
+
+  .border-bottom{
+    border-bottom: 2px solid  variebles.$color-primary;}
+
+  .link-tell{display: none;}
+  
+  .menu:active{transform: scale(1.3);}
 }
 
-.navbar__link{
-  @include mixins.flex(0, row, space-between, center);
-  gap: 20px;
 
-  
+
+@media screen and (min-width: 770px) {
+  .navbar{
+    .navbar__link{@include mixins.flex(0, row, space-between, center);}
+    .link-tell{display: block;}
+    .menu{display: none;}
+
+  }
 
 }

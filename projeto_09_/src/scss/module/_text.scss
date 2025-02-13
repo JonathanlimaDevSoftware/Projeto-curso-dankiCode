@@ -1,0 +1,9 @@
+@use '../utils/variables' as variebles;
+.paragraph{
+  max-width: 450px;
+  font-size: 1rem;
+  color: variebles.$color-fifth;
+  .paragraph--detail{
+    font-weight: 600;}
+
+}
