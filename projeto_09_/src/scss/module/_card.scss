@@ -1,0 +1,18 @@
+@use '../utils/variables' as variebles;
+@use '../utils/mixins' as mixins;
+
+
+.card-single{
+  
+
+  h2{
+    font-size: 1.70rem;
+    line-height: 26px;
+    margin: 25px 0;
+    .title--detail{
+      font-size: 1.70rem;
+      color: variebles.$color-fourth;
+    }
+  }
+
+}

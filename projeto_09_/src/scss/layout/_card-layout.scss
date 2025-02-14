@@ -1,0 +1,40 @@
+@use '../utils/mixins' as mixins;
+
+.wrapper{
+  @include mixins.center-auto(920px);
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  gap: 20px;
+
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .wrapper{
+
+  grid-template-columns: repeat(2, minmax(200px, 340px));
+  justify-content: center;
+
+
+
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .wrapper{
+
+  grid-template-columns: repeat(1, minmax(200px, 340px));
+  justify-content: center;
+
+    .card-single{
+      text-align: center;
+      img{
+        display: inline-block;
+      }
+    }
+
+
+  }
+}

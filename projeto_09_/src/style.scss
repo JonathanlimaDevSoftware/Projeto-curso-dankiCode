@@ -9,7 +9,7 @@
 @use 'scss/layout/header';
 @use 'scss/layout/navbar';
 @use 'scss/layout/call-back';
-
+@use 'scss/layout/card-layout';
 
 @use 'scss/module/button';
 @use 'scss/module/title';
@@ -19,6 +19,7 @@
 @use 'scss/module/bubbles';
 @use 'scss/module/ladder';
 @use 'scss/module/border-line';
+@use 'scss/module/card';
 
 
 @use 'scss/state/active';
