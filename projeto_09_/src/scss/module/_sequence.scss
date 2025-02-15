@@ -1,0 +1,34 @@
+.sequence{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+
+  .number{
+    width: 100px;
+    padding: 27px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.67em;
+
+  }
+
+  .line{
+    width: 2px;
+    height: 70px;
+    border: 1px solid #ccc;
+    transform: translateX(50px);
+  }
+
+
+}
+
+
+
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  .title-main{max-width: 350px; h2{font-size: 1.2rem;} }
+
+}
