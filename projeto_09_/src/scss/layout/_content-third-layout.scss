@@ -1,0 +1,43 @@
+@use '../utils/mixins' as mixins;
+.content-third{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  @include mixins.center-auto(1443px);
+
+  .content-third__bottom{
+    position: relative;
+    min-height: 500px;
+    grid-column: 1/3;
+    background: #fff url('/projeto_09_/src/img/bg/bg_02.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    h2 {
+      position: absolute; /* ou fixed */
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+    }
+    
+    
+  }
+
+}
+
+@media screen and (max-width:980px){
+  .content-third{
+
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    
+    .content-third__text{
+      display: flex; flex-direction: column; align-items: center;
+      
+    }
+
+    .content-third__bottom{grid-column: auto;}
+    
+  }
+  
+}
