@@ -1,10 +1,10 @@
-@mixin flex($padding: 10px, $direction: row, $space: center, $align: center) {
+@mixin flex($padding: 10px, $direction: row, $space: start, $align: start, $gap:0) {
   display: flex;
   flex-wrap: wrap;
-  padding: $padding;          // Padding dinâmico, valor padrão 10px
-  flex-direction: $direction;  // Flexível, pode ser 'row' ou 'column', valor padrão 'row'
-  justify-content: $space;    // Espaçamento entre os itens: 'center', 'space-between', etc., valor padrão 'center'
-  align-items: $align;        // Alinhamento vertical dos itens: 'center', 'flex-start', etc., valor padrão 'center'
+  padding: $padding;          
+  flex-direction: $direction;  
+  justify-content: $space;   
+  align-items: $align;        
 }
 
 
@@ -16,4 +16,13 @@
 @mixin btn-input($background: #3d9d45, $color: white){
   background-color: $background;
   color: $color;
+}
+
+
+@mixin grid($templete-columns: 1fr, $gap:0, $justify-content: auto, $align-items:auto){
+  display: grid;
+  gap: $gap;
+  grid-template-columns: $templete-columns;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
