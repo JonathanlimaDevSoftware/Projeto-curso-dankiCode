@@ -28,9 +28,9 @@ O propósito deste repositório é simples, mas significativo para mim:
 
 Aqui você vai encontrar uma variedade de projetos que estão sendo desenvolvidos ao longo do meu curso:
 
-- **Projeto 1**: Uma aplicação interativa feita com React e TypeScript, focada em [descrever o propósito do projeto]. 
-- **Projeto 2**: Um site estilizado com Tailwind CSS, mostrando minha habilidade em criar layouts modernos e responsivos.
-- **Projeto 3**: [Adicionar detalhes do próximo projeto e sua funcionalidade].
+- **Projeto 1**: Um site simple do projeto 9 do curso. Fiz usando o curso como parâmetro, mas com total autonômia. 
+- **Projeto 2**: 
+- **Projeto 3**: .
 
 ## 🛠️ Como Rodar os Projetos
 
@@ -49,11 +49,13 @@ Para rodar qualquer um dos projetos do repositório, siga estas etapas simples:
 3. Instale as dependências:
     ```bash
     npm install
+    npm i sass
     ```
 
 4. Execute o servidor de desenvolvimento:
     ```bash
     npm run dev
+    npm run sass
     ```
 
 Com isso, o projeto estará pronto para ser visualizado localmente!
