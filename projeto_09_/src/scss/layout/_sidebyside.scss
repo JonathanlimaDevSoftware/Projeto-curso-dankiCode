@@ -30,8 +30,25 @@
     li{color: #2d5c1271;}
   }
   .side__right{justify-self: start; text-align: center;
+    img{display: inline-block;}
   li{
     color: variebles.$color-third ;
   }}
 
+}
+
+
+
+@media screen and (max-width:580px) {
+  
+  .sidebyside{
+    @include mixins.grid($templete-columns:1fr,$gap:20px);
+  
+    .title-main{grid-column: auto;} 
+    .line{display: none;}
+    
+    .side__left{justify-self: auto;}
+    .side__right{justify-self: auto;}
+  
+  }
 }

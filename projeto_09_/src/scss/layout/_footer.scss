@@ -39,3 +39,23 @@
 
 
 }
+
+
+@media screen and (max-width:723px) {
+  .footer-content{
+  
+    @include mixins.grid($templete-columns: 1fr);
+    .title-main{
+      grid-column:auto
+    }
+  
+    .footer-end{
+      grid-column: auto;
+    }
+  
+    .person{ justify-self: auto; .paragraph{margin: 0 auto;}}
+
+    .address{text-align: center; .paragraph{margin: 0 auto;} padding: 30px 0; 
+    .input-write{max-width: 900px; width: 100%;}}
+  }
+}

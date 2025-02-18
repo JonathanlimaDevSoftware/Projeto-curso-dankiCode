@@ -5,15 +5,7 @@
 @use 'scss/utils/mixins';
 @use 'scss/utils/variables';
 
-@use 'scss/layout/container';
-@use 'scss/layout/header';
-@use 'scss/layout/navbar';
-@use 'scss/layout/call-back';
-@use 'scss/layout/card-layout';
-@use 'scss/layout/content-third-layout';
-@use 'scss/layout/content-fourth-layout';
-@use 'scss/layout/sidebyside';
-@use 'scss/layout/footer';
+
 
 @use 'scss/module/button';
 @use 'scss/module/title';
@@ -24,6 +16,19 @@
 @use 'scss/module/card';
 @use 'scss/module/content-third';
 @use 'scss/module/sequence';
+
+
+@use 'scss/layout/container';
+@use 'scss/layout/header';
+@use 'scss/layout/navbar';
+@use 'scss/layout/call-back';
+@use 'scss/layout/card-layout';
+@use 'scss/layout/content-third-layout';
+@use 'scss/layout/content-fourth-layout';
+@use 'scss/layout/sidebyside';
+@use 'scss/layout/footer';
+
+
 
 
 @use 'scss/state/active';

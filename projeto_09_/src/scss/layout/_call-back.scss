@@ -24,8 +24,23 @@
 
 }
 
+@media screen and (max-width: 490px){
+  .call-back{
+    .call-back__right{
+      display: none;
+    }
 
-@media screen and (max-width: 500px) {
+
+    .form-single{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+  }
+}
+@media screen and (min-width:491px) and (max-width: 500px) {
   .call-back{
     text-align: center;
     .title-main{
@@ -41,17 +56,20 @@
 
 }
 
-@media screen and (max-width: 910px) {
-  .call-back{
-    @include mixins.flex(0,column, space-between, center);
+
+@media screen and (min-width: 501px) and (max-width: 910px) {
+  .call-back {
+    @include mixins.flex(0, column, space-between, center);
     
-    .call-back__right{
+    .call-back__right {
       overflow: hidden;
       display: flex;
-      img{
+      
+      img {
         width: 150px;
-      }  
+      }
     }
-
   }
 }
+
+

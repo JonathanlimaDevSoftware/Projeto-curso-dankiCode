@@ -1,10 +1,10 @@
 @use '../utils/mixins' as mixins;
 .content-third{
+  
 
-  column-gap: 30px;
   @include mixins.grid(repeat(2, 1fr));
   @include mixins.center-auto(1443px);
-
+  gap: 30px;
   .content-third__bottom{
     position: relative;
     min-height: 500px;
@@ -24,8 +24,31 @@
   }
 
 }
+@media screen and (max-width: 490px) {
+  .content-third{
 
-@media screen and (max-width:980px){
+    padding-right: 0;
+    .content-third__bottom{
+      min-height: 300px;
+      background-size: cover;
+      
+      h2 {
+        width: 100%;
+        max-width: 100%;
+        transform: translate(-50%, -10%);
+      }
+      
+    }
+    img{
+      display: none;
+    }
+    .content-third__text{
+      grid-column: 1/3;
+ 
+    }
+  }
+}
+@media screen and (min-width:491px) and (max-width:980px){
   .content-third{
 
     grid-template-columns: 1fr;
