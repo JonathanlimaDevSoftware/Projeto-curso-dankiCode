@@ -1,0 +1,57 @@
+/* Reset básico para remover estilos padrão dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Melhorando a acessibilidade e tipografia */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Define um tamanho de fonte base */
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Definição para elementos de mídia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Removendo estilos padrão de botões e inputs */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Melhorando a usabilidade de botões */
+button {
+  cursor: pointer;
+}
+
+/* Links sem estilos padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sem padding e margin padrão */
+ul, ol {
+  list-style: none;
+}
+
+/* Elementos ocultos por padrão */
+[hidden] {
+  display: none;
+}

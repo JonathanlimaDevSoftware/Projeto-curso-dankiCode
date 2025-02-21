@@ -1,0 +1,111 @@
+
+/* Cores do tema */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --btn-hover: #357ABD;
+  --danger-color: #e74c3c;
+  --danger-hover: #c0392b;
+}
+
+/* Estilização da seção principal */
+.form {
+  width: 100%;
+  min-height: 400px;
+  max-width: 400px;
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+/* Estilização do formulário */
+.cform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cform h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Campos de entrada */
+.cform input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+.cform input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Botão de envio */
+.btn-submit {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+  background: var(--btn-hover);
+}
+
+/* Painel de usuários */
+.painel-form-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.core-use p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 5px 0;
+}
+
+/* Botão de deletar usuário */
+.btn {
+  background: var(--danger-color);
+  padding: 8px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--danger-hover);
+}
+.btn:active{
+  transform: scale(0.9);
+}
+
+/* Ícone dentro do botão */
+.btn img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .form {
+    max-width: 90%;
+  }
+}

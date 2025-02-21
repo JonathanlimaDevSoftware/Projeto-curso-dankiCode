@@ -1,0 +1,63 @@
+
+
+.card-film {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-film:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title-film {
+  position: relative;
+}
+
+.img-film {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.title-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.info-film {
+  padding: 15px;
+}
+
+.description-film {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.trailer-film {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.trailer-film:hover {
+  background-color: #d32f2f;
+}
